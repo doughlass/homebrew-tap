@@ -1,34 +1,34 @@
 class Orbit < Formula
   desc "Terminal UI for AWS"
   homepage "https://github.com/doughlass/orbit"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/doughlass/orbit/releases/download/v1.5.0/orbit-tui-aarch64-apple-darwin.tar.gz",
+      url "https://github.com/doughlass/orbit/releases/download/v1.6.0/orbit-tui-aarch64-apple-darwin.tar.gz",
           using: CurlDownloadStrategy,
           headers: ["Accept: application/octet-stream"]
-      sha256 "de13a964d70e39155c956a92e123612603d9f0ab8c9e486aadb0888a4dc87f99"
+      sha256 "a2dad276f425fc9a8784b0f8516053372af89596dc44bfbf09d0d63b0543d70a"
     else
-      url "https://github.com/doughlass/orbit/releases/download/v1.5.0/orbit-tui-x86_64-apple-darwin.tar.gz",
+      url "https://github.com/doughlass/orbit/releases/download/v1.6.0/orbit-tui-x86_64-apple-darwin.tar.gz",
           using: CurlDownloadStrategy,
           headers: ["Accept: application/octet-stream"]
-      sha256 "93e7b4a598d5f4b76191a387bceb74023836bfcf32c7a3ed7cc6cb75acf886ff"
+      sha256 "5c1f222c3524a0ad14692ef2dfe691ff140901702a812f5ba3868090a1064520"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/doughlass/orbit/releases/download/v1.5.0/orbit-tui-aarch64-unknown-linux-musl.tar.gz",
+      url "https://github.com/doughlass/orbit/releases/download/v1.6.0/orbit-tui-aarch64-unknown-linux-musl.tar.gz",
           using: CurlDownloadStrategy,
           headers: ["Accept: application/octet-stream"]
-      sha256 "d3f32e749ca90f1a35cc6d4730e40f3dbdb05343fa270effef451353e984d271"
+      sha256 "60237d6ea12aff94af82bb63573ee8c1f0f2f615e102a5937f9da3e1827961c3"
     else
-      url "https://github.com/doughlass/orbit/releases/download/v1.5.0/orbit-tui-x86_64-unknown-linux-musl.tar.gz",
+      url "https://github.com/doughlass/orbit/releases/download/v1.6.0/orbit-tui-x86_64-unknown-linux-musl.tar.gz",
           using: CurlDownloadStrategy,
           headers: ["Accept: application/octet-stream"]
-      sha256 "46e20f0a19e1aecd6c585391bf969760e97b7be75109eb5b8d23fdd70d2075b3"
+      sha256 "ce8718d3b9ffd6bcda9b5b3f4176fd03652067d4e5075bb2cfbbdc98827004fd"
     end
   end
 
